@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/wilted-logo-white.png">
+    <link rel="icon" href="../assets/web-icon.png">
     <link rel="stylesheet" href="../styles/store.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Wilted</title>
 </head>
 <body>
     <header id="main-header">
-        <a href="#"><img class="logo" src="../assets/wilted-single-logo.png" alt="logo"></a>
-        <button class="nav-toggle">
-            <i class="fa fa-bars"></i>
-        </button>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+      <a href="./index.html"><img class="logo" src="../assets/wilted-single-logo.png" alt="logo"></a>
+      <nav class="nav__menu">
+          <ul class="nav__links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li>
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                <div class="cart">
+                  <h2 class="cart-title">Your Cart</h2>
+                  <div class="cart-content">
+                    
+                  </div>
+
+                  <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                  </div>
+
+                  <button type="button" class="buy-btn">Buy Now</button>
+
+                  <i class="fa-solid fa-xmark" id="close-cart"></i>
+                </div>
+              </li>
+          </ul>
+      </nav>
     </header>
     <section id="main-about">
         <h2 class="intro-tittle">Shopping</h2>
@@ -37,139 +52,213 @@
     <section id="people-cards">
 <!--  PRODUCTOS INICIO -->
  <div class="row">
-    
     </section>
     <section class="product-list ">
       <div>
-        <h1 class="align-center">
-          Products
-        </h1>
+        <h2 class="main-text">
+          Our products
+        </h2>
       </div>
-
       <div class="product-container">
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 1</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-<!--       First Product -->
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 2</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-<div class="card">
-    <div class="content">     
-   
-    <div class="title">Headphone</div>
-    <div class="image">
-      <img
-        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1505740420928-5e560c06d30e.jpeg?v=1585724732029"
-      />
-    </div>
-    <div class="text">
-      This is a headphone. It has noise cancelling properties.
-    </div>
-     </div>
-      <button  class="buy-button details">
-        Buy Now
-      </button>
- 
-  </div>
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 3</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-  <!-- Second Product -->
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 4</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-  <div class="card">
-    <div class="title">Polaroid Camera</div>
-    <div class="image">
-      <img
-        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1526170375885-4d8ecf77b99f.jpeg?v=1585724749339"
-      />
-    </div>
-    <div class="text">
-      This is a polaroid camera. O'l skool style.
-    </div>
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 5</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-       <button  class="buy-button details">
-        Buy Now
-      </button>
- 
-  </div>
-  
-<!--       Third Product -->
-  <div class="card">
-    <div class="title">Polaroid Camera</div>
-    <div class="image">
-      <img
-        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1515955656352-a1fa3ffcd111.jpeg?v=1585724733237"
-      />
-    </div>
-    <div class="text">
-      This is a polaroid camera. O'l skool style.
-    </div>
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1515955656352-a1fa3ffcd111.jpeg?v=1585724733237" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 6</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-       <button  class="buy-button">
-        Buy Now
-      </button>
- 
-  </div>
-  
-  
-<!--       Fourth Product -->
-  <div class="card">
-    <div class="title">Polaroid Camera</div>
-    <div class="image">
-      <img
-        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848"
-      />
-    </div>
-    <div class="text">
-      This is a polaroid camera. O'l skool style.
-    </div>
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 7</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-       <button  class="buy-button">
-        Buy Now
-      </button>
- 
-  </div>
-<!--       Fifth Product -->
-<div class="card">
-    <div class="title">Polaroid Camera</div>
-    <div class="image">
-      <img
-        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848"
-      />
-    </div>
-    <div class="text">
-      This is a polaroid camera. O'l skool style.
-    </div>
+        <div class="card">
+          <div class="img__box">
+            <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" class="product-img"/>
+            <ul class="action-button">
+              <!--<li>
+                <i class="fa fa-heart"></i>
+                <span>Add to Whishlist</span> 
+              </li>-->
+              <li>
+                <i class="fa-solid fa-cart-shopping buy-item"></i>
+                <span>Add to Cart</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="product-name">
+              <h3 class="product-title">ITEM 8</h3>
+            </div>
+            <div class="price">
+              <h2>$12.45</h2>
+            </div>
+          </div>
+        </div>
 
-       <button  class="buy-button">
-        Buy Now
-      </button>
- 
-  </div>
-
-<!--   Sixth Product -->
-<div class="card">
-    <div class="title">Polaroid Camera</div>
-    <div class="image">
-      <img
-        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848"
-      />
-    </div>
-    <div class="text">
-      This is a polaroid camera. O'l skool style.
-    </div>
-
-       <button  class="buy-button">
-        Buy Now
-      </button>
- 
-  </div>
-
-
-<!--  PRODUCTOS FINAL -->
-  
-     </div>
+      </div>
     </section>
 
     <footer>
         <div class="footer-content">
             <a href="#"><img class="logo-footer" src="../assets/wilted-logo-white.png" alt="logo"></a>
-            <p>texto texto texto texto texto texto texto</p>
+            <p>#WiltedProject</p>
             <ul class="social-media">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -183,6 +272,6 @@
         </div>
     </footer>
 
-
+    <script src="../scripts/logic.js" defer></script>
 </body>
 </html>
