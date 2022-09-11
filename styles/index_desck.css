@@ -235,6 +235,10 @@ footer{
     line-height: 3rem;
 }
 
+.footer-content ul{
+    padding: 0;
+}
+
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
