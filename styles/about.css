@@ -16,7 +16,7 @@
 
 body{
     background-color: var(--lighGray);
-    height: 200vh;
+    height: auto;
 }
 
 li, a, button{
@@ -43,7 +43,7 @@ li, a, button{
 
 .logo-footer{
     width: 180px;
-    height: 90px;
+    height: 100px;
     cursor: pointer;
 }
 
@@ -64,21 +64,14 @@ li, a, button{
     color: #A0A1A0;
 }
 
-.nav-toggle{
-    color: #000;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-
-    display: none;
-}
-
 #main-about{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
 }
 
 .intro-tittle{
@@ -86,17 +79,101 @@ li, a, button{
     font-weight: 800;
     font-size: 32px;
     margin: 20px;
+    text-align: center;
 }
 
 .intro-content{
     display: flex;
-    padding: 20px 34px 40px 40px;
+    padding: 20px 40px 10px 40px;
 }
 
 .intro-content p{
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 300;
     font-size: 20px;
+    text-align: center;
+}
+
+#people-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.card{
+    background: #fff;
+    width: 280px;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-image{
+    background-color: #171717;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 3px;
+    justify-content: center;
+}
+
+.card-image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.social-media-cards{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.social-media-cards li{
+    margin: 0 10px;
+}
+
+.social-media-cards a{
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media-cards a i{
+    font-size: 1.1rem;
+}
+
+.social-media-cards a:hover i{
+    color: var(--lighGray);
+}
+
+.card h2{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.card p{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 footer{
@@ -106,6 +183,7 @@ footer{
     font-family: 'Saira Condensed', sans-serif;
     padding-top: 40px;
     color: #fff;
+    margin-top: 10px;
 }
 
 .footer-content{
@@ -176,14 +254,13 @@ footer{
 
 @media (max-width: 768px){
     body{
-        background-color: red;
-        height: 200vh;
+        height: auto;
     }
 
     #main-header{
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         flex-direction: column;
-        /*padding: 20px 5%;*/
+        padding: 20px 5%;
     }
     
     .logo{
@@ -191,39 +268,59 @@ footer{
         height: 40px;
         cursor: pointer;
     }
-    
-    .logo-footer{
-        width: 180px;
-        height: 90px;
-        cursor: pointer;
+
+    .nav__menu{
+        margin-top: 15px;
+    }
+
+    .card{
+        background: #fff;
+        width: 230px;
+        height: auto;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.5s ease 0s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
     
-    .nav__links{
-        list-style: none;
+    .card-image{
+        background-color: #171717;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        padding: 3px;
+        justify-content: center;
     }
     
-    .nav__links li{
-        display: inline-block;
-        padding: 0px 20px;
+    .card-image img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+
+    .card h2{
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        padding: 20px;
     }
     
-    .nav__links li a{
-        transition: all 0.3s ease 0s;
+    .card p{
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        padding: 10px;
     }
-    
-    .nav__links li a:hover{
-        color: #A0A1A0;
-    }
-    
-    .nav-toggle{
-        color: #000;
-        background: none;
-        border: none;
-        font-size: 30px;
-        padding: 0 20px;
-        line-height: 60px;
-    
-        display: none;
+
+    .card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     }
 }
 
