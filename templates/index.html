@@ -4,33 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/web-icon.png">
     <link rel="stylesheet" href="../styles/index_desck.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <title>Wilted</title>
 </head>
 <body>
-    <header id="main-header">
+    <aside id="main-aside">
         <nav>
             <ul>
-                <a class="header__itemFilter" href="">H</a>
-                <a class="header__itemFilter" href="">M</a>
-                <a class="header__itemFilter" href="">N</a>
-                <a class="header__itemFilter" href="">A</a>
+                <li><a href="#"><i class="aside__item fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="aside__item fab fa-github"></i></a></li>
+                <li><a href="#"><i class="aside__item fab fa-linkedin-square"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <header id="main-header">
+        <a href="./index.html"><img class="logo" src="../assets/wilted-single-logo.png" alt="logo"></a>
+        <nav class="nav__menu">
+            <ul class="nav__links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="main-banner" class="section">
+        </section>
+        <section id="first-division" class="section">
+            <div class="style__first-division">
+                <h1>Hombre</h1>
+                <img src="../assets/men_moda.jpg" alt="sds" class="bg-style__first-division">
+            </div>
+            <div class="style__first-division">
+                <h1>Mujer</h1>
+                <img src="../assets/woman_moda.jpg" alt="sds" class="bg-style__first-division">
+            </div>
+            <div class="style__first-division">
+                <h1>Children</h1>
+                <img src="../assets/children_moda.jpg" alt="sds" class="bg-style__first-division">
+            </div>
+        </section>
+        <section id="outfit-section" class="section">
+            <h1>---- Tees ----</h1>
+            <div class="outfit-clothing" id="outfit-tee"></div>
+            <h1>---- Pants ----</h1>
+            <div class="outfit-clothing" id="outfit-pants"></div>
+            <h1>---- Shoes ----</h1>
+            <div class="outfit-clothing" id="outfit-shoes"></div>
+        </section>
         <footer>
-            <nav>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Otro</li>
-                </ul>
-            </nav>
+            <div class="footer-content">
+                <a href="./index.html"><img class="logo-footer" src="../assets/wilted-logo-white.png" alt="logo"></a>
+                <p>#WiltedProject</p>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-square"></i></a></li>
+                </ul>   
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2020 Wilted. desinged with ❤️ by <span>MAMV3x3</span></p>
+            </div>
         </footer>
     </main>
+    <script src="../Scripts/index.js"></script>
 </body>
 </html>
