@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@500;700&family=Saira+Condensed:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --lighGray: #e6e6e6;
+    --lg: 22px;
+    --md: 20px;
+    --sm: 18px;
+}
+
+body{
+    background-color: var(--lighGray);
+    height: 200vh;
+}
+
+li, a, button{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+#main-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo{
+    width: 160px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.logo-footer{
+    width: 180px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #A0A1A0;
+}
+
+.nav-toggle{
+    color: #000;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+#main-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-tittle{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.intro-content{
+    display: flex;
+    padding: 5px 31px 20px 40px;
+}
+
+.intro-content p{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+/* ---- Productos ----- */
+
+
+  .product-list {
+    padding: 3em;
+  }
+  
+  .product-list .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 5px 5px #b2bec3;
+    text-align: center;
+    font-family: 'Saira Condensed';
+  }
+  
+  .card .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 100px;
+  }
+  
+  .card .text {
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-size: 20px;
+  }
+  
+  .buy-button {
+    background-color: #d2c5ca;
+    border: none;
+    padding: 1em;
+    border-radius: 7px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .buy-button:hover {
+    box-shadow: 0px 5px 5px #b2bec3;
+    color: #110f0f;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+  
+  .align-center {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    padding: 1em; 
+  }
+  
+  .card .details {
+    position: relative;
+    top: 0px;
+    transition: 2s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .card:hover .details {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+    transition: 2s ease;
+  }
+  
+
+/*--------------------*/
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'Saira Condensed', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social-media li{
+    margin: 0 10px;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media a i{
+    font-size: 1.1rem;
+}
+
+.social-media a:hover i{
+    color: var(--lighGray);
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.footer-bottom{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize ;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+
+@media (max-width: 768px){
+    body{
+       /* background-color: red; */
+        height: 200vh;
+    }
+
+    #main-header{
+        background-color: white;
+        flex-direction: column;
+        /*padding: 20px 5%;*/
+    }
+    
+    .logo{
+        width: 110px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .logo-footer{
+        width: 180px;
+        height: 90px;
+        cursor: pointer;
+    }
+    
+    .nav__links{
+        list-style: none;
+    }
+    
+    .nav__links li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .nav__links li a{
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav__links li a:hover{
+        color: #A0A1A0;
+    }
+    .nav-toggle{
+        color: #000;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+    
+        display: none;
+    }
+}
